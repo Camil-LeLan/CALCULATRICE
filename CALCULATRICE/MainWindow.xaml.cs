@@ -51,84 +51,63 @@ namespace CALCULATRICE
 
         // CHIFFRES
 
-        private void BTN_One_Click(object sender, RoutedEventArgs e)
+        private void displayNumber(string number)
         {
             if (TB_Display.Text == "0")
-                TB_Display.Text = "1";
+                TB_Display.Text = number;
             else
-                TB_Display.Text += "1";
+                TB_Display.Text += number;
         }
+
+        private void BTN_One_Click(object sender, RoutedEventArgs e)
+        {
+            displayNumber("1");
+        }               
+           
 
         private void BTN_Two_Click(object sender, RoutedEventArgs e)
         {
-            if (TB_Display.Text == "0")
-                TB_Display.Text = "2";
-            else
-                TB_Display.Text += "2";
+            displayNumber("2");
         }
 
         private void BTN_Three_Click(object sender, RoutedEventArgs e)
         {
-            if (TB_Display.Text == "0")
-                TB_Display.Text = "3";
-            else
-                TB_Display.Text += "3";
+            displayNumber("3");
         }
-
+        
         private void BTN_Four_Click(object sender, RoutedEventArgs e)
         {
-            if (TB_Display.Text == "0")
-                TB_Display.Text = "4";
-            else
-                TB_Display.Text += "4";
+            displayNumber("4");
         }
 
         private void BTN_Five_Click(object sender, RoutedEventArgs e)
         {
-            if (TB_Display.Text == "0")
-                TB_Display.Text = "5";
-            else
-                TB_Display.Text += "5";
+            displayNumber("5");
         }
 
         private void BTN_Six_Click(object sender, RoutedEventArgs e)
         {
-            if (TB_Display.Text == "0")
-                TB_Display.Text = "6";
-            else
-                TB_Display.Text += "6";
+            displayNumber("6");
         }
 
         private void BTN_Seven_Click(object sender, RoutedEventArgs e)
         {
-            if (TB_Display.Text == "0")
-                TB_Display.Text = "7";
-            else
-                TB_Display.Text += "7";
+            displayNumber("7");
         }
 
         private void BTN_Eight_Click(object sender, RoutedEventArgs e)
         {
-            if (TB_Display.Text == "0")
-                TB_Display.Text = "8";
-            else
-                TB_Display.Text += "8";
+            displayNumber("8");
         }
 
         private void BTN_Nine_Click(object sender, RoutedEventArgs e)
         {
-            if (TB_Display.Text == "0")
-                TB_Display.Text = "9";
-            else
-                TB_Display.Text += "9";
+            displayNumber("9");
         }
 
         private void BTN_Zero_Click(object sender, RoutedEventArgs e)
         {
-            if (TB_Display.Text == "0")
-                TB_Display.Text = "0";
-            else
-                TB_Display.Text += "0";
+            displayNumber("0");
         }
 
         // ADDITION
